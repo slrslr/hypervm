@@ -51,8 +51,8 @@ install_GIT()
 	GIT_VERSION='1.8.3.4'
 	
 	echo "Downloading and compiling GIT ${GIT_VERSION}"
-	wget http://git-core.googlecode.com/files/git-${GIT_VERSION}.tar.gz
-	tar xvfz git-*.tar.gz; cd git-*;
+        wget https://github.com/git/git/archive/v1.8.3.4.tar.gz
+        tar xvfz v1.8.3.4.tar.gz; cd *1.8.3.4*;
 	./configure --prefix=/usr --with-curl --with-expat
 	make all
 	make install
